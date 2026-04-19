@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="task-section">
+            <h2>Настройки приложения</h2>
+            <input type="text" id="userNameInput" placeholder="Введите ваше имя для сохранения">
+            <button class="btn1" onclick="saveSettings()">Сохранить настройки</button>
+            <p id="settingsStatus"></p>
+        </section>
+
+        <hr>
+
+        <section class="task-section">
+            <h2>Работа с базой данных</h2>
+            <input type="text" id="dbDataInput" placeholder="Введите данные для БД">
+            
+            <div class="btn_group">
+                <button class="btn1" onclick="addToDatabase()">Заполнить БД</button>
+                <button class="btn1" onclick="readFromDatabase()">Вывести записи</button>
+            </div>
+
+            <div id="dbOutput" class="bdd">
+                Здесь появятся данные из базы...
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    background-image: url('/img/Frame\ 2087326407.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.task-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Твой стиль кнопок */
+.btn1 {
+    margin: 12px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90%;
+    height: 40px; /* Немного увеличил высоту для удобства на телефоне */
+    border-radius: 6px;
+    border: 1px solid #000000;
+    background-color: #FFD23F;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.btn1:active {
+    background-color: #e6bd39;
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.bdd{
+    width: 90%;
+    min-height: 50px;
+    background: #f9f9f9;
+    border: 1px dashed #bbb;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.btn_group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
