@@ -1,4 +1,4 @@
-// --- 1. Работа с "SharedPreferences" (localStorage) ---
+// Задание 1
 function saveSettings() {
     const name = document.getElementById('userNameInput').value;
     if (name) {
@@ -8,19 +8,16 @@ function saveSettings() {
         alert("Поле пустое!");
     }
 }
-
-// Загрузка настроек при старте
 window.onload = () => {
     const savedName = localStorage.getItem('user_name');
     if (savedName) {
         document.getElementById('settingsStatus').innerText = `Последнее имя: ${savedName}`;
     }
-    initDB(); // Инициализация БД
+    initDB(); 
 };
 
-// --- 2. Работа с Базой Данных (IndexedDB - аналог SQLite) ---
+// Задание 2
 let db;
-
 function initDB() {
     const request = indexedDB.open("MyTestDB", 1);
 
@@ -33,8 +30,6 @@ function initDB() {
         db = event.target.result;
     };
 }
-
-// Кнопка 1: Заполнить БД (аналог insert в SQLite)
 function addToDatabase() {
     const input = document.getElementById('dbDataInput');
     const value = input.value.trim();
@@ -50,8 +45,6 @@ function addToDatabase() {
         alert("Запись добавлена в базу!");
     };
 }
-
-// Кнопка 2: Вывести записи (аналог SELECT * в SQLite)
 function readFromDatabase() {
     const output = document.getElementById('dbOutput');
     const transaction = db.transaction(["entries"], "readonly");
