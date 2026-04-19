@@ -2,7 +2,7 @@ body {
     background-image: url('Frame_fon.png');
     background-size: cover;
     font-family: Arial, sans-serif;
-    display: flex;
+    min-height: 100vh;
     justify-content: center;
     padding: 20px;
 }
